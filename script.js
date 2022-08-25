@@ -82,7 +82,7 @@ function animate(timeStamp) {
         context.fillStyle = 'rgba(0, 0, 0, 0.05)';
         context.textAlign = 'center'
         context.fillRect(0, 0, canvas.width, canvas.height)
-        context.fillStyle = 'cyan'
+        context.fillStyle = '#0aff0a'
         context.font = effect.fontSize + 'px monospace';
         effect.symbols.forEach(symbol => symbol.drawRandomSymbol(context));
         timer = 0;

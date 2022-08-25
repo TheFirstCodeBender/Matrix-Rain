@@ -11,12 +11,9 @@
 h1 {
     font-family: Matrix;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 2;
     font-size: 100px;
-    color: cyan;
+    color: #0aff0a;
     cursor: default;
 }
 body {
