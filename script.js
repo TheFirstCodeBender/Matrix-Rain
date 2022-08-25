@@ -1,15 +1,15 @@
-const canvas = document.getElementById('canvas1');
+const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
-let gradient = context.createLinearGradient(0, 0, canvas.width, canvas.height);
-gradient.addColorStop(0, 'red');
-gradient.addColorStop(0.2, 'yellow');
-gradient.addColorStop(0.4, 'green');
-gradient.addColorStop(0.6, 'cyan');
-gradient.addColorStop(0.8, 'blue');
-gradient.addColorStop(1, 'magenta');
+// let gradient = context.createLinearGradient(0, 0, canvas.width, canvas.height);
+// gradient.addColorStop(0, 'red');
+// gradient.addColorStop(0.2, 'yellow');
+// gradient.addColorStop(0.33, 'green');
+// gradient.addColorStop(0.6, 'cyan');
+// gradient.addColorStop(0.66, 'blue');
+// gradient.addColorStop(1, 'magenta');
 /*
 4 Pillars of object oriented Programming
 1) Encapsulation
@@ -82,7 +82,7 @@ function animate(timeStamp) {
         context.fillStyle = 'rgba(0, 0, 0, 0.05)';
         context.textAlign = 'center'
         context.fillRect(0, 0, canvas.width, canvas.height)
-        context.fillStyle = gradient//'#0aff0a';
+        context.fillStyle = 'cyan'
         context.font = effect.fontSize + 'px monospace';
         effect.symbols.forEach(symbol => symbol.drawRandomSymbol(context));
         timer = 0;
@@ -98,12 +98,12 @@ animate(0);
 window.addEventListener('resize', function () {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
-    gradient = context.createLinearGradient(0, 0, canvas.width, canvas.height);
-    gradient.addColorStop(0, 'red');
-    gradient.addColorStop(0.2, 'yellow');
-    gradient.addColorStop(0.4, 'green');
-    gradient.addColorStop(0.6, 'cyan');
-    gradient.addColorStop(0.8, 'blue');
-    gradient.addColorStop(1, 'magenta');
+    // gradient = context.createLinearGradient(0, 0, canvas.width, canvas.height);
+    // gradient.addColorStop(0, 'red');
+    // gradient.addColorStop(0.2, 'yellow');
+    // gradient.addColorStop(0.4, 'green');
+    // gradient.addColorStop(0.6, 'cyan');
+    // gradient.addColorStop(0.8, 'blue');
+    // gradient.addColorStop(1, 'magenta');
     effect.resize(canvas.width, canvas.height)
 })

@@ -1,7 +1,23 @@
+
+@font-face {
+    font-family: Matrix;
+    src: url(matrix.ttf);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h1 {
+    font-family: Matrix;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 100px;
+    color: cyan;
+    cursor: default;
 }
 body {
     overflow: hidden;
@@ -11,5 +27,13 @@ canvas {
     position:absolute;
     top: 0;
     left: 0;
+    font-family: Matrix, sans-serif;
+}
 
+#title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
 }
