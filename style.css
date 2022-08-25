@@ -22,13 +22,6 @@ canvas {
     font-family: Matrix, sans-serif;
 }
 
-#title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
-}
 
 .hero {
     font-size: clamp(40px, 10vw, 100px);
